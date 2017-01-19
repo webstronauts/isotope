@@ -1,0 +1,53 @@
+// Flexbox
+// --------------------------------------------------------------------------
+
+.flexGrow-1 {
+  flex-grow: 1;
+}
+
+.flexShrink-1 {
+  flex-shrink: 1;
+}
+
+// Flex Basis
+// --------------------------------------------------------------------------
+
+.flexBasis-100 {
+  flex-basis: 100%;
+}
+
+// Flex Direction
+// --------------------------------------------------------------------------
+
+@each $direction in $flexDirection-values {
+  .flexDirection-#{camelize($direction)} {
+    flex-direction: $direction;
+  }
+}
+
+// Justification
+// --------------------------------------------------------------------------
+
+@each $justify in $justifyContent-values {
+  .justifyContent-#{camelize($justify)} {
+    justify-content: $justify;
+  }
+}
+
+// Align Items
+// --------------------------------------------------------------------------
+
+@each $align in $alignItems-values {
+  .alignItems-#{camelize($align)} {
+    align-items: $align;
+  }
+}
+
+// Align Content
+// --------------------------------------------------------------------------
+
+@each $align in $alignContent-values {
+  .alignContent-#{camelize($align)} {
+    align-content: $align;
+  }
+}

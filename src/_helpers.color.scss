@@ -1,0 +1,40 @@
+.backgroundColor-transparent,
+.backgroundColor-transparent--active:active,
+.backgroundColor-transparent--focus:focus,
+.backgroundColor-transparent--hover:hover {
+  background-color: transparent;
+}
+
+@each $color, $hex in $color-values {
+  .backgroundColor-#{$color},
+  .backgroundColor-#{$color}--active:active,
+  .backgroundColor-#{$color}--focus:focus,
+  .backgroundColor-#{$color}--hover:hover {
+    background-color: $hex;
+  }
+
+  .borderColor-#{$color},
+  .borderColor-#{$color}--active:active,
+  .borderColor-#{$color}--focus:focus,
+  .borderColor-#{$color}--hover:hover {
+    border-color: #{$hex};
+  }
+
+  .boxShadow-#{$color},
+  .boxShadow-#{$color}--active:active,
+  .boxShadow-#{$color}--focus:focus,
+  .boxShadow-#{$color}--hover:hover {
+    box-shadow: inset 0 0 0 1px $hex;
+  }
+
+  .color-#{$color},
+  .color-#{$color}--active:active,
+  .color-#{$color}--focus:focus,
+  .color-#{$color}--hover:hover {
+    color: #{$hex};
+  }
+
+  .fill-#{$color} {
+    fill: $hex;
+  }
+}

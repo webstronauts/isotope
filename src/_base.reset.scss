@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input {
+  background: none;
+  border: 0;
+  color: inherit;
+}
+
+th {
+  font-weight: 400;
+  text-align: left;
+}

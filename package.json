@@ -1,0 +1,45 @@
+{
+  "name": "isotope",
+  "description": "The Atomic CSS framework to build upon.",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "dist",
+    "lib",
+    "src",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webstronauts/isotope"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production gulp",
+    "prepublish": "npm run build",
+    "start": "concurrently \"serve -p 5000 .\" \"npm run watch\"",
+    "test": "NODE_ENV=development standard && stylelint src/**/*.scss",
+    "watch": "NODE_ENV=development gulp watch"
+  },
+  "dependencies": {
+    "camelcase": "^4.0.0",
+    "titleize": "^1.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "concurrently": "^3.1.0",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.2.2",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "node-sass": "^4.3.0",
+    "serve": "^2.4.1",
+    "standard": "*",
+    "stylelint": "^7.7.1",
+    "stylelint-config-standard": "^15.0.0"
+  }
+}

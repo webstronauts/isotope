@@ -1,0 +1,66 @@
+// Background Image
+// --------------------------------------------------------------------------
+
+.backgroundImage-none,
+.backgroundImage-none--active:active,
+.backgroundImage-none--focus:focus,
+.backgroundImage-none--hover:hover {
+  background-image: none;
+}
+
+// Background Position
+// --------------------------------------------------------------------------
+
+.backgroundPosition-leftTop {
+  background-position: 0 0;
+}
+
+.backgroundPosition-leftCenter {
+  background-position: 0;
+}
+
+.backgroundPosition-leftBottom {
+  background-position: 0 100%;
+}
+
+.backgroundPosition-rightTop {
+  background-position: 100% 0;
+}
+
+.backgroundPosition-rightCenter {
+  background-position: 100%;
+}
+
+.backgroundPosition-rightBottom {
+  background-position: 100% 100%;
+}
+
+.backgroundPosition-centerTop {
+  background-position: top;
+}
+
+.backgroundPosition-centerCenter {
+  background-position: 50%;
+}
+
+.backgroundPosition-centerBottom {
+  background-position: bottom;
+}
+
+// Background Repeat
+// --------------------------------------------------------------------------
+
+@each $repeat in $backgroundRepeat-values {
+  .backgroundRepeat-#{camelize($repeat)} {
+    background-repeat: $repeat;
+  }
+}
+
+// Background Size
+// --------------------------------------------------------------------------
+
+@each $size in $backgroundSize-values {
+  .backgroundSize-#{camelize($size)} {
+    background-size: $size;
+  }
+}

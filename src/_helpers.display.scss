@@ -1,0 +1,5 @@
+@each $display in $display-values {
+  .display-#{camelize($display)} {
+    display: $display;
+  }
+}

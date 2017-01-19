@@ -1,0 +1,29 @@
+@each $family, $value in $fontFamily-values {
+  .fontFamily-#{$family} {
+    font-family: $value;
+  }
+}
+
+@each $size, $value in $fontSize-values {
+  .fontSize-#{$size} {
+    font-size: $value;
+  }
+}
+
+@each $weight in $fontWeight-values {
+  .fontWeight-#{$weight} {
+    font-weight: $weight;
+  }
+}
+
+@for $weight from 1 through 9 {
+  .fontWeight-#{$weight} {
+    font-weight: $weight * 100;
+  }
+}
+
+@each $height, $value in $lineHeight-values {
+  .lineHeight-#{$height} {
+    line-height: $value;
+  }
+}
