@@ -2,8 +2,13 @@
   appearance: none;
 }
 
-.cursor-pointer {
-  cursor: pointer;
+// Cursor
+// --------------------------------------------------------------------------
+
+@each $cursor in $cursor-values {
+  .cursor-#{camelize($cursor)} {
+    cursor: $cursor;
+  }
 }
 
 .outlineStyle-none {

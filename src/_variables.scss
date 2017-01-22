@@ -44,6 +44,11 @@ $fontSize-values: ( xxs: 10px, xs: 12px, s: 14px, m: 16px, l: 18px, xl: 20px, xx
 $fontWeight-values: ( bold, bolder, normal, lighter  );
 $lineHeight-values: ( xxs: 14px, xs: 18px, s: 22px, m: 24px, l: 28px, xl: 34px, xxl: 38px, xxxl: 46px, xxxxl: 48px ) !default;
 
+// Interface
+// --------------------------------------------------------------------------
+
+$cursor-values: ( col-resize, crosshair, default, e-resize, ew-resize, grab, inherit, move, nesw-resize, no-drop, not-allowed, n-resize, ns-resize, nwse-resize, pointer, row-resize, s-resize, text, vertical-text, w-resize, zoom-in, zoom-out );
+
 // List
 // --------------------------------------------------------------------------
 
