@@ -23,7 +23,7 @@
       }
 
       .#{$property}-#{$value}vh {
-        #{$property}: #{$value / 100}vh;
+        #{$property}: #{$value}vh;
       }
     }
 
