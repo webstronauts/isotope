@@ -11,9 +11,7 @@ gulp.task('styles', () => (
     .pipe($.sass({
       functions
     }).on('error', $.sass.logError))
-    .pipe($.postcss([
-      require('autoprefixer')()
-    ]))
+    .pipe($.postcss())
     .pipe($.rename('isotope.css'))
     .pipe(gulp.dest('./dist'))
     .pipe($.cssnano())
