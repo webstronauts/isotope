@@ -3,6 +3,7 @@
   "description": "The Atomic CSS toolkit to build upon.",
   "version": "0.0.0",
   "license": "MIT",
+  "author": "Robin van der Vleuten <robin@webstronauts.co>",
   "main": "lib/index.js",
   "files": [
     "dist",
