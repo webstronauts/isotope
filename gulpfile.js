@@ -14,10 +14,10 @@ gulp.task('styles', () => (
     .pipe($.postcss([
       require('autoprefixer')()
     ]))
-    .pipe($.rename('style.css'))
+    .pipe($.rename('isotope.css'))
     .pipe(gulp.dest('./dist'))
     .pipe($.cssnano())
-    .pipe($.rename('style.min.css'))
+    .pipe($.rename('isotope.min.css'))
     .pipe(gulp.dest('./dist'))
     .pipe($.livereload())
 ))
