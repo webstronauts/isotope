@@ -1,0 +1,40 @@
+// Spacing
+// --------------------------------------------------------------------------
+
+@each $property in ( margin, padding ) {
+  @each $name, $value in $spacing-values {
+    .#{$property}-#{camelize(inspect($name))} {
+      #{$property}: #{$value};
+    }
+
+    @each $direction in ( top, bottom, left, right ) {
+      .#{$property}#{titleize(inspect($direction))}-#{camelize(inspect($name))} {
+        #{$property}-#{$direction}: #{$value};
+      }
+    }
+
+    .#{$property}Horizontal-#{camelize(inspect($name))} {
+      #{$property}-left: #{$value};
+      #{$property}-right: #{$value};
+    }
+
+    .#{$property}Vertical-#{camelize(inspect($name))} {
+      #{$property}-bottom: #{$value};
+      #{$property}-top: #{$value};
+    }
+  }
+}
+
+.marginHorizontal-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Overflow
+// --------------------------------------------------------------------------
+
+@each $value in ( visible, hidden, scroll, auto, inherit, initial, unset ) {
+  .overflow-#{camelize(inspect($value))} {
+    overflow: $value;
+  }
+}

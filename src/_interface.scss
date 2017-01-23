@@ -1,0 +1,36 @@
+// Appearance
+// --------------------------------------------------------------------------
+
+.appearance-none {
+  appearance: none;
+}
+
+// Cursor
+// --------------------------------------------------------------------------
+
+@each $value in  ( col-resize, crosshair, default, e-resize, ew-resize, grab, inherit, move, nesw-resize, no-drop, not-allowed, n-resize, ns-resize, nwse-resize, pointer, row-resize, s-resize, text, vertical-text, w-resize, zoom-in, zoom-out ) {
+  .cursor-#{camelize(inspect($value))} {
+    cursor: $value;
+  }
+}
+
+// Outline Style
+// --------------------------------------------------------------------------
+
+.outlineStyle-none {
+  outline-style: none;
+}
+
+// Pointer Events
+// --------------------------------------------------------------------------
+
+.pointerEvents-none {
+  pointer-events: none;
+}
+
+// User Select
+// --------------------------------------------------------------------------
+
+.userSelect-none {
+  user-select: none;
+}

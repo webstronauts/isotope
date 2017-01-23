@@ -1,0 +1,53 @@
+// Text Align
+// --------------------------------------------------------------------------
+
+@each $value in ( left, right, center, justify ) {
+  .textAlign-#{camelize(inspect($value))} {
+    text-align: $value;
+  }
+}
+
+// Text Decoration
+// --------------------------------------------------------------------------
+
+@each $value in ( line-through, none, overline, underline ) {
+  .textDecoration-#{camelize(inspect($value))} {
+    text-decoration: $value;
+  }
+}
+
+// Text Overflow
+// --------------------------------------------------------------------------
+
+@each $value in ( clip, ellipsis, string ) {
+  .textOverflow-#{camelize(inspect($value))} {
+    text-overflow: $value;
+  }
+}
+
+// Text Transform
+// --------------------------------------------------------------------------
+
+@each $value in ( capitalize, full-width, lowercase, none, uppercase, inherit ) {
+  .textTransform-#{camelize(inspect($value))} {
+    text-transform: $value;
+  }
+}
+
+// Text Rendering
+// --------------------------------------------------------------------------
+
+@each $value in ( optimizeLegibility, geometricPrecision, optimizeSpeed, auto ) {
+  .textRendering-#{camelize(inspect($value))} {
+    text-rendering: $value;
+  }
+}
+
+// White Space
+// --------------------------------------------------------------------------
+
+@each $whiteSpace in ( normal, nowrap, pre, pre-line, pre-wrap ) {
+  .whiteSpace-#{camelize($whiteSpace)} {
+    white-space: $whiteSpace;
+  }
+}

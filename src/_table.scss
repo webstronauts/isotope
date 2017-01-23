@@ -1,0 +1,8 @@
+// Table Layout
+// --------------------------------------------------------------------------
+
+@each $value in ( auto, fixed ) {
+  .tableLayout-#{camelize(inspect($value))} {
+    table-layout: $value;
+  }
+}

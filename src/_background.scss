@@ -1,10 +1,20 @@
+// Background Color
+// --------------------------------------------------------------------------
+
+@each $name, $value in $color-values {
+  .backgroundColor-#{camelize(inspect($name))} {
+    background-color: $value;
+  }
+}
+
+.backgroundColor-transparent {
+  background-color: transparent;
+}
+
 // Background Image
 // --------------------------------------------------------------------------
 
-.backgroundImage-none,
-.backgroundImage-none--active:active,
-.backgroundImage-none--focus:focus,
-.backgroundImage-none--hover:hover {
+.backgroundImage-none {
   background-image: none;
 }
 
@@ -50,17 +60,17 @@
 // Background Repeat
 // --------------------------------------------------------------------------
 
-@each $repeat in $backgroundRepeat-values {
-  .backgroundRepeat-#{camelize($repeat)} {
-    background-repeat: $repeat;
+@each $value in ( repeat, repeat-x, repeat-y, no-repeat ) {
+  .backgroundRepeat-#{camelize(inspect($value))} {
+    background-repeat: $value;
   }
 }
 
 // Background Size
 // --------------------------------------------------------------------------
 
-@each $size in $backgroundSize-values {
-  .backgroundSize-#{camelize($size)} {
-    background-size: $size;
+@each $value in ( cover, contain, auto ) {
+  .backgroundSize-#{camelize(inspect($value))} {
+    background-size: $value;
   }
 }

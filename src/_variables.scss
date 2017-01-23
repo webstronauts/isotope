@@ -1,84 +1,32 @@
-// Background
-// --------------------------------------------------------------------------
-
-$backgroundRepeat-values: ( repeat, repeat-x, repeat-y, no-repeat );
-$backgroundSize-values: ( cover, contain, auto );
-
 // Border
 // --------------------------------------------------------------------------
 
-$borderCollapse-values: ( collapse separate );
-$borderWidth-amount: 3 !default;
-$borderRadius-values: ( s: 2px, m: 4px, l: 8px, none: 0 ) !default;
-$borderStyle-values: ( solid );
+$borderWidth-values: ( none: 0, s: 0.125rem, m: 0.25rem, l: 0.5rem, xl: 1rem, xxl: 2rem ) !default;
+$borderRadius-values: ( none: 0, s: 0.125rem, m: 0.25rem, l: 0.5rem, xl: 1rem, xxl: 2rem, circle: 50% ) !default;
 
 // Color
 // --------------------------------------------------------------------------
 
-$color-values: (
-  black: #212529,
-  white: #fff,
-  primary: #329af0,
-  positive: #40c057,
-  negative: #f03e3e
-) !default;
+$color-values: ( black: #212529, white: #fff, primary: #329af0, positive: #40c057, negative: #f03e3e ) !default;
 
-// Display
+// Dimension
 // --------------------------------------------------------------------------
 
-$display-values: ( block, inline-block, flex, inline-flex, none );
-
-// Flex
-// --------------------------------------------------------------------------
-
-$alignContent-values: ( center, flex-start, flex-end, space-around, space-between, stretch );
-$alignItems-values: ( center, flex-start, flex-end, stretch, baseline );
-$justifyContent-values: ( center, flex-start, flex-end, space-around, space-between );
-$flexDirection-values: ( column, column-reverse, row, row-reverse );
+$dimension-values: ( s: 1rem, m: 2rem, l: 4rem, xl: 8rem, xxl: 16rem ) !default;
 
 // Font
 // --------------------------------------------------------------------------
 
-$fontFamily-values: ( OpenSans: #{'Open Sans', 'Helvetica Neue', Helvetica, sans-serif} ) !default;
-$fontSize-values: ( xxs: 10px, xs: 12px, s: 14px, m: 16px, l: 18px, xl: 20px, xxl: 28px, xxxl: 38px, xxxxl: 46px ) !default;
-$fontWeight-values: ( bold, bolder, normal, lighter  );
-$lineHeight-values: ( xxs: 14px, xs: 18px, s: 22px, m: 24px, l: 28px, xl: 34px, xxl: 38px, xxxl: 46px, xxxxl: 48px ) !default;
-
-// Interface
-// --------------------------------------------------------------------------
-
-$cursor-values: ( col-resize, crosshair, default, e-resize, ew-resize, grab, inherit, move, nesw-resize, no-drop, not-allowed, n-resize, ns-resize, nwse-resize, pointer, row-resize, s-resize, text, vertical-text, w-resize, zoom-in, zoom-out );
-
-// List
-// --------------------------------------------------------------------------
-
-$listStyle-values: ( decimal, disc, none );
+$fontFamily-values: ( sans-serif: sans-serif, serif: serif ) !default;
+$fontSize-values: ( s: 0.875rem, m: 1rem, l: 1.25rem, xl: 1.5rem, xxl: 2.25rem, xxxl: 3rem ) !default;
+$lineHeight-values: ( s: 1, m: 1, l: 1.25, xl: 1.5, xxl: 2 ) !default;
 
 // Spacing
 // --------------------------------------------------------------------------
 
-$spacingDirection-values: ( top, right, bottom, left );
-$spacingSize-values: ( xs: 4px, s: 8px, m: 16px, l: 24px, xl: 32px, xxl: 40px, xxxl: 48px, xxxxl: 56px, none: 0 ) !default;
-$spacingUnit-values: ( padding, margin );
-$overflow-values: ( visible, hidden, scroll, auto, inherit, initial, unset );
-
-// Position
-// --------------------------------------------------------------------------
-
-$position-values: ( absolute, fixed, relative );
-
-// Text
-// --------------------------------------------------------------------------
-
-$textAlignment-values: ( left, right, center, justify );
-$textDecoration-values: ( line-through, none, overline, underline );
-$textOverflow-values: ( clip, ellipsis, string );
-$textTransform-values: ( capitalize, full-width, lowercase, none, uppercase, inherit );
-$whiteSpace-values: ( normal, nowrap, pre, pre-line, pre-wrap );
+$spacing-values: ( none, 0, xs: 0.25rem, s: 0.5rem, m: 1rem, l: 2rem, xl: 4rem, xxl: 8rem, xxxl: 16rem ) !default;
 
 // Transition
 // --------------------------------------------------------------------------
 
 $transitionDuration-values: ( s: 80ms, m: 0.15s, l: 0.3s, xl: 0.5s, xxl: 0.7, none: 0 ) !default;
-$transitionProperty-values: ( all, none );
-$transitionTimingFunction-values: ( linear, ease, ease-in, ease-out, ease-in-out );

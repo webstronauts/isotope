@@ -1,0 +1,35 @@
+@each $name, $value in $fontFamily-values {
+  .fontFamily-#{camelize(inspect($name))} {
+    font-family: $value;
+  }
+}
+
+@each $name, $value in $fontSize-values {
+  .fontSize-#{camelize(inspect($name))} {
+    font-size: $value;
+  }
+}
+
+@each $value in ( normal, italic ) {
+  .fontStyle-#{camelize(inspect($value))} {
+    font-style: $value;
+  }
+}
+
+@each $value in ( bold, bolder, normal, lighter ) {
+  .fontWeight-#{camelize(inspect($value))} {
+    font-weight: $value;
+  }
+}
+
+@for $value from 1 through 9 {
+  .fontWeight-#{$value} {
+    font-weight: $value * 100;
+  }
+}
+
+@each $name, $value in $lineHeight-values {
+  .lineHeight-#{camelize(inspect($name))} {
+    line-height: $value;
+  }
+}

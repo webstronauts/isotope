@@ -1,0 +1,5 @@
+@each $value in ( decimal, disc, none ) {
+  .listStyleType-#{camelize($value)} {
+    list-style-type: $value;
+  }
+}

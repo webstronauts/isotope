@@ -1,5 +1,0 @@
-@each $style in $listStyle-values {
-  .listStyle-#{camelize($style)} {
-    list-style-type: $style;
-  }
-}

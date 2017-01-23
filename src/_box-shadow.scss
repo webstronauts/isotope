@@ -1,0 +1,12 @@
+// Box Shadow
+// --------------------------------------------------------------------------
+
+@each $name, $value in $color-values {
+  .boxShadow-#{camelize(inspect($name))} {
+    box-shadow: inset 0 0 0 1px $value;
+  }
+}
+
+.boxShadow-none {
+  box-shadow: none;
+}

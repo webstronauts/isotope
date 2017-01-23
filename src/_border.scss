@@ -1,0 +1,92 @@
+// Border Collapse
+// --------------------------------------------------------------------------
+
+@each $value in ( collapse, separate ) {
+  .borderCollapse-#{camelize(inspect($value))} {
+    border-collapse: $value;
+  }
+}
+
+// Border Color
+// --------------------------------------------------------------------------
+
+@each $name, $value in $color-values {
+  .borderColor-#{camelize(inspect($name))} {
+    border-color: $value;
+  }
+}
+
+// Border Style
+// --------------------------------------------------------------------------
+
+@each $value in ( solid ) {
+  .borderStyle-#{camelize(inspect($value))} {
+    border-style: $value;
+  }
+}
+
+// Border Width
+// --------------------------------------------------------------------------
+
+@each $name, $value in $borderWidth-values {
+  .borderWidth-#{camelize(inspect($name))} {
+    border-width: $value;
+  }
+
+  .borderWidthTop-#{camelize(inspect($name))} {
+    border-top-width: $value;
+  }
+
+  .borderWidthBottom-#{camelize(inspect($name))} {
+    border-bottom-width: $value;
+  }
+
+  .borderWidthLeft-#{camelize(inspect($name))} {
+    border-left-width: $value;
+  }
+
+  .borderWidthRight-#{camelize(inspect($name))} {
+    border-right-width: $value;
+  }
+}
+
+// Border Radius
+// --------------------------------------------------------------------------
+
+@each $name, $value in $borderRadius-values {
+  .borderRadius-#{camelize(inspect($name))} {
+    border-radius: $value;
+  }
+
+  .borderRadiusTop-#{camelize(inspect($name))} {
+    border-radius: $value $value 0 0;
+  }
+
+  .borderRadiusBottom-#{camelize(inspect($name))} {
+    border-radius: 0 0 $value $value;
+  }
+
+  .borderRadiusLeft-#{camelize(inspect($name))} {
+    border-radius: $value 0 0 $value;
+  }
+
+  .borderRadiusRight-#{camelize(inspect($name))} {
+    border-radius: 0 $value $value 0;
+  }
+
+  .borderRadiusBottomLeft-#{camelize(inspect($name))} {
+    border-radius: 0 0 0 $value;
+  }
+
+  .borderRadiusBottomRight-#{camelize(inspect($name))} {
+    border-radius: 0 0 $value 0;
+  }
+
+  .borderRadiusTopLeft-#{camelize(inspect($name))} {
+    border-radius: $value 0 0 0;
+  }
+
+  .borderRadiusTopRight-#{camelize(inspect($name))} {
+    border-radius: 0 $value 0 0;
+  }
+}

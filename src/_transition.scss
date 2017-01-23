@@ -1,0 +1,26 @@
+// Transition Duration
+// --------------------------------------------------------------------------
+
+@each $name, $value in $transitionDuration-values {
+  .transitionDuration-#{camelize(inspect($name))} {
+    transition-duration: $value;
+  }
+}
+
+// Transition Property
+// --------------------------------------------------------------------------
+
+@each $value in ( all, none ) {
+  .transitionProperty-#{camelize(inspect($value))} {
+    transition-property: $value;
+  }
+}
+
+// Transition Timing Function
+// --------------------------------------------------------------------------
+
+@each $value in ( linear, ease, ease-in, ease-out, ease-in-out ) {
+  .transitionTimingFunction-#{camelize(inspect($value))} {
+    transition-timing-function: $value;
+  }
+}

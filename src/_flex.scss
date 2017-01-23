@@ -19,35 +19,35 @@
 // Flex Direction
 // --------------------------------------------------------------------------
 
-@each $direction in $flexDirection-values {
-  .flexDirection-#{camelize($direction)} {
-    flex-direction: $direction;
+@each $value in ( column, column-reverse, row, row-reverse ) {
+  .flexDirection-#{camelize(inspect($value))} {
+    flex-direction: $value;
   }
 }
 
-// Justification
+// Justify Content
 // --------------------------------------------------------------------------
 
-@each $justify in $justifyContent-values {
-  .justifyContent-#{camelize($justify)} {
-    justify-content: $justify;
+@each $value in ( center, flex-start, flex-end, space-around, space-between ) {
+  .justifyContent-#{camelize(inspect($value))} {
+    justify-content: $value;
   }
 }
 
 // Align Items
 // --------------------------------------------------------------------------
 
-@each $align in $alignItems-values {
-  .alignItems-#{camelize($align)} {
-    align-items: $align;
+@each $value in ( center, flex-start, flex-end, space-around, space-between, stretch ) {
+  .alignItems-#{camelize(inspect($value))} {
+    align-items: $value;
   }
 }
 
 // Align Content
 // --------------------------------------------------------------------------
 
-@each $align in $alignContent-values {
-  .alignContent-#{camelize($align)} {
-    align-content: $align;
+@each $value in ( center, flex-start, flex-end, stretch, baseline ) {
+  .alignContent-#{camelize(inspect($value))} {
+    align-content: $value;
   }
 }

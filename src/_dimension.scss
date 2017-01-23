@@ -1,0 +1,52 @@
+// Dimension
+// --------------------------------------------------------------------------
+
+@each $property in ( width, height ) {
+  @each $name, $value in $dimension-values {
+    .#{$property}-#{capitalize(inspect($name))} {
+      #{$property}: $value;
+    }
+  }
+
+  @for $value from 10 through 100 {
+    @if $value % 5 == 0 {
+      .#{$property}-#{$value} {
+        #{$property}: percentage($value / 100);
+      }
+
+      .#{$property}-#{$value}vw {
+        #{$property}: #{$value}vw;
+      }
+
+      .#{$property}-#{$value} {
+        #{$property}: percentage($value / 100);
+      }
+
+      .#{$property}-#{$value}vh {
+        #{$property}: #{$value / 100}vh;
+      }
+    }
+
+    @if $value == 100 {
+      .#{$property}-min-#{$value} {
+        min-#{$property}: percentage($value / 100);
+      }
+
+      .#{$property}-min-#{$value}vh {
+        min-#{$property}: #{$value / 100}vh;
+      }
+    }
+  }
+
+  .#{$property}-oneThird {
+    #{$property}: percentage(1 / 3);
+  }
+
+  .#{$property}-twoThird {
+    #{$property}: percentage(2 / 3);
+  }
+
+  .#{$property}-auto {
+    #{$property}: auto;
+  }
+}
