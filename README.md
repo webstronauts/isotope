@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/webstronauts/isotope.svg?branch=master)](https://travis-ci.org/webstronauts/isotope)
 
-The Atomic CSS framework to build upon.
+The Atomic CSS toolkit to build upon.
 
 ## How to use
 

@@ -1,6 +1,6 @@
 {
   "name": "isotope",
-  "description": "The Atomic CSS framework to build upon.",
+  "description": "The Atomic CSS toolkit to build upon.",
   "version": "0.0.0",
   "license": "MIT",
   "main": "lib/index.js",
