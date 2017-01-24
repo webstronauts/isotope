@@ -33,7 +33,7 @@
       }
 
       .#{$property}-min-#{$value}vh {
-        min-#{$property}: #{$value / 100}vh;
+        min-#{$property}: #{$value}vh;
       }
     }
   }
