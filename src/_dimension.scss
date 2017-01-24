@@ -17,14 +17,6 @@
       .#{$property}-#{$value}vw {
         #{$property}: #{$value}vw;
       }
-
-      .#{$property}-#{$value} {
-        #{$property}: percentage($value / 100);
-      }
-
-      .#{$property}-#{$value}vh {
-        #{$property}: #{$value}vh;
-      }
     }
 
     @if $value == 100 {
