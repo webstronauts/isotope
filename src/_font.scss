@@ -1,5 +1,5 @@
 @each $name, $value in $fontFamily-values {
-  .fontFamily-#{camelize(inspect($name))} {
+  .fontFamily-#{$name} {
     font-family: $value;
   }
 }
