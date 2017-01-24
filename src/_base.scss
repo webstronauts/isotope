@@ -1,24 +1,34 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  @extend .boxSizing-borderBox;
+  @extend .margin-none;
+  @extend .padding-none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @extend .fontSize-m;
+  @extend .fontWeight-4;
 }
 
 a {
-  text-decoration: none;
+  @extend .textDecoration-none;
 }
 
 button,
 input,
 textarea {
-  background: transparent;
-  border: none;
-  font-size: 100%;
-  outline-style: none;
+  @extend .backgroundColor-transparent;
+  @extend .borderWidth-none;
+  @extend .fontSize-m;
+  @extend .outlineStyle-none;
 }
 
 th {
-  text-align: left;
+  @extend .textAlign-left;
 }
