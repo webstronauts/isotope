@@ -4,17 +4,22 @@
   "version": "0.0.0",
   "license": "MIT",
   "author": "Robin van der Vleuten <robin@webstronauts.co>",
-  "main": "lib/index.js",
-  "files": [
-    "dist",
-    "lib",
-    "src",
-    "README.md"
-  ],
+  "homepage": "https://github.com/webstronauts/isotope#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/webstronauts/isotope"
   },
+  "bugs": {
+    "url": "https://github.com/webstronauts/isotope/issues"
+  },
+  "files": [
+    "dist",
+    "lib",
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
+  "main": "lib/index.js",
   "scripts": {
     "build": "NODE_ENV=production gulp",
     "prepublish": "npm run build",
