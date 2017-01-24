@@ -2,7 +2,7 @@
 // --------------------------------------------------------------------------
 
 @each $name, $value in $color-values {
-  .backgroundColor-#{camelize(inspect($name))} {
+  .backgroundColor-#{$name} {
     background-color: $value;
   }
 }

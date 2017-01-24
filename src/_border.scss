@@ -11,7 +11,7 @@
 // --------------------------------------------------------------------------
 
 @each $name, $value in $color-values {
-  .borderColor-#{camelize(inspect($name))} {
+  .borderColor-#{$name} {
     border-color: $value;
   }
 }
