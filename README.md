@@ -6,7 +6,18 @@ The Atomic CSS toolkit to build upon.
 
 ## How to use
 
-Add the package as dependency:
+### Use the CDN
+
+The quickest and easiest way to include Isotope into your project is to add a
+reference to the minified version to the head of your HTML;
+
+```html
+<link rel="stylesheet" href="//unpkg.com/isotope/dist/isotope.min.css">
+```
+
+### Local installation
+
+Add the package as dependency;
 
 ```
 npm install isotope --save
@@ -14,7 +25,8 @@ npm install isotope --save
 
 ## Inspiration
 
-We're not re-inventing the wheel here. The inspiration for this toolkit comes from a couple of other awesome projects;
+We're not re-inventing the wheel here. The inspiration for this toolkit comes
+from a couple of other awesome projects;
 
 - http://basscss.com
 - http://buildwithbeard.com
