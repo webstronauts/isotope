@@ -1,7 +1,7 @@
 // Text Align
 // --------------------------------------------------------------------------
 
-@each $value in ( left, right, center, justify ) {
+@each $value in ( initial, left, right, center, justify ) {
   .textAlign-#{camelize(inspect($value))} {
     text-align: $value;
   }
