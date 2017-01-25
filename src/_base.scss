@@ -22,11 +22,19 @@ a {
 
 button,
 input,
+select,
 textarea {
+  @extend .appearance-none;
   @extend .backgroundColor-transparent;
   @extend .borderWidth-none;
+  @extend .color-inherit;
   @extend .fontSize-m;
   @extend .outlineStyle-none;
+}
+
+button,
+select {
+  @extend .textTransform-none;
 }
 
 th {
