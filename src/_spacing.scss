@@ -25,6 +25,10 @@
   }
 }
 
+.margin-auto {
+  margin: auto;
+}
+
 .marginHorizontal-auto {
   margin-left: auto;
   margin-right: auto;
@@ -36,5 +40,13 @@
 @each $value in ( visible, hidden, scroll, auto, inherit, initial, unset ) {
   .overflow-#{camelize(inspect($value))} {
     overflow: $value;
+  }
+
+  .overflowX-#{camelize(inspect($value))} {
+    overflow-x: $value;
+  }
+
+  .overflowY-#{camelize(inspect($value))} {
+    overflow-y: $value;
   }
 }
