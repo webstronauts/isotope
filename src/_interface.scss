@@ -24,8 +24,10 @@
 // Pointer Events
 // --------------------------------------------------------------------------
 
-.pointerEvents-none {
-  pointer-events: none;
+@each $value in  ( auto, none ) {
+  .pointerEvents-#{camelize(inspect($value))} {
+    pointer-events: $value;
+  }
 }
 
 // User Select
