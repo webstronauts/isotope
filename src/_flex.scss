@@ -25,6 +25,15 @@
   }
 }
 
+// Flex Wrap
+// --------------------------------------------------------------------------
+
+@each $value in ( nowrap, wrap, wrap-reverse, inherit, initial, unset ) {
+  .flexWrap-#{camelize(inspect($value))} {
+    flex-wrap: $value;
+  }
+}
+
 // Justify Content
 // --------------------------------------------------------------------------
 
