@@ -10,3 +10,12 @@
 .color-inherit {
   color: inherit;
 }
+
+// Fill
+// --------------------------------------------------------------------------
+
+@each $name, $value in $color-values {
+  .fill-#{$name} {
+    fill: $value;
+  }
+}
