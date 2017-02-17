@@ -22,6 +22,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "NODE_ENV=production gulp",
+    "precommit": "npm run build",
     "prepublish": "npm run build",
     "start": "concurrently \"serve -p 5000 .\" \"npm run watch\"",
     "test": "NODE_ENV=development npm run build && standard && stylelint src/**/*.scss && immutable-css dist/isotope.css",
@@ -42,6 +43,7 @@
     "gulp-postcss": "^6.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
+    "husky": "^0.13.1",
     "immutable-css-cli": "^1.1.1",
     "node-sass": "^4.3.0",
     "serve": "^2.4.1",
