@@ -113,79 +113,49 @@ textarea {
   border-right-width: 0; }
 
 .borderWidth-s {
-  border-width: 0.125rem; }
+  border-width: 1px; }
 
 .borderWidthTop-s {
-  border-top-width: 0.125rem; }
+  border-top-width: 1px; }
 
 .borderWidthBottom-s {
-  border-bottom-width: 0.125rem; }
+  border-bottom-width: 1px; }
 
 .borderWidthLeft-s {
-  border-left-width: 0.125rem; }
+  border-left-width: 1px; }
 
 .borderWidthRight-s {
-  border-right-width: 0.125rem; }
+  border-right-width: 1px; }
 
 .borderWidth-m {
-  border-width: 0.25rem; }
+  border-width: 2px; }
 
 .borderWidthTop-m {
-  border-top-width: 0.25rem; }
+  border-top-width: 2px; }
 
 .borderWidthBottom-m {
-  border-bottom-width: 0.25rem; }
+  border-bottom-width: 2px; }
 
 .borderWidthLeft-m {
-  border-left-width: 0.25rem; }
+  border-left-width: 2px; }
 
 .borderWidthRight-m {
-  border-right-width: 0.25rem; }
+  border-right-width: 2px; }
 
 .borderWidth-l {
-  border-width: 0.5rem; }
+  border-width: 3px; }
 
 .borderWidthTop-l {
-  border-top-width: 0.5rem; }
+  border-top-width: 3px; }
 
 .borderWidthBottom-l {
-  border-bottom-width: 0.5rem; }
+  border-bottom-width: 3px; }
 
 .borderWidthLeft-l {
-  border-left-width: 0.5rem; }
+  border-left-width: 3px; }
 
 .borderWidthRight-l {
-  border-right-width: 0.5rem; }
-
-.borderWidth-xl {
-  border-width: 1rem; }
-
-.borderWidthTop-xl {
-  border-top-width: 1rem; }
-
-.borderWidthBottom-xl {
-  border-bottom-width: 1rem; }
-
-.borderWidthLeft-xl {
-  border-left-width: 1rem; }
-
-.borderWidthRight-xl {
-  border-right-width: 1rem; }
-
-.borderWidth-xxl {
-  border-width: 2rem; }
-
-.borderWidthTop-xxl {
-  border-top-width: 2rem; }
-
-.borderWidthBottom-xxl {
-  border-bottom-width: 2rem; }
-
-.borderWidthLeft-xxl {
-  border-left-width: 2rem; }
-
-.borderWidthRight-xxl {
-  border-right-width: 2rem; }
+  border-right-width: 3px; }
 
 .borderRadius-none {
   border-radius: 0; }
@@ -422,6 +392,21 @@ input,
 select,
 textarea {
   color: inherit; }
+
+.fill-black {
+  fill: #212529; }
+
+.fill-white {
+  fill: #fff; }
+
+.fill-primary {
+  fill: #329af0; }
+
+.fill-positive {
+  fill: #40c057; }
+
+.fill-negative {
+  fill: #f03e3e; }
 
 .width-10 {
   width: 10%; }
@@ -737,6 +722,30 @@ textarea {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse; }
 
+.flexWrap-nowrap {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+
+.flexWrap-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.flexWrap-wrapReverse {
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse; }
+
+.flexWrap-inherit {
+  -ms-flex-wrap: inherit;
+      flex-wrap: inherit; }
+
+.flexWrap-initial {
+  -ms-flex-wrap: initial;
+      flex-wrap: initial; }
+
+.flexWrap-unset {
+  -ms-flex-wrap: unset;
+      flex-wrap: unset; }
+
 .justifyContent-center {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -988,6 +997,9 @@ input,
 select,
 textarea {
   outline-style: none; }
+
+.pointerEvents-auto {
+  pointer-events: auto; }
 
 .pointerEvents-none {
   pointer-events: none; }
@@ -1449,6 +1461,9 @@ textarea {
   padding-bottom: 16rem;
   padding-top: 16rem; }
 
+.margin-auto {
+  margin: auto; }
+
 .marginHorizontal-auto {
   margin-left: auto;
   margin-right: auto; }
@@ -1456,23 +1471,65 @@ textarea {
 .overflow-visible {
   overflow: visible; }
 
+.overflowX-visible {
+  overflow-x: visible; }
+
+.overflowY-visible {
+  overflow-y: visible; }
+
 .overflow-hidden {
   overflow: hidden; }
+
+.overflowX-hidden {
+  overflow-x: hidden; }
+
+.overflowY-hidden {
+  overflow-y: hidden; }
 
 .overflow-scroll {
   overflow: scroll; }
 
+.overflowX-scroll {
+  overflow-x: scroll; }
+
+.overflowY-scroll {
+  overflow-y: scroll; }
+
 .overflow-auto {
   overflow: auto; }
+
+.overflowX-auto {
+  overflow-x: auto; }
+
+.overflowY-auto {
+  overflow-y: auto; }
 
 .overflow-inherit {
   overflow: inherit; }
 
+.overflowX-inherit {
+  overflow-x: inherit; }
+
+.overflowY-inherit {
+  overflow-y: inherit; }
+
 .overflow-initial {
   overflow: initial; }
 
+.overflowX-initial {
+  overflow-x: initial; }
+
+.overflowY-initial {
+  overflow-y: initial; }
+
 .overflow-unset {
   overflow: unset; }
+
+.overflowX-unset {
+  overflow-x: unset; }
+
+.overflowY-unset {
+  overflow-y: unset; }
 
 .tableLayout-auto {
   table-layout: auto; }
