@@ -143,19 +143,34 @@ textarea {
   border-right-width: 2px; }
 
 .borderWidth-l {
-  border-width: 3px; }
+  border-width: 4px; }
 
 .borderWidthTop-l {
-  border-top-width: 3px; }
+  border-top-width: 4px; }
 
 .borderWidthBottom-l {
-  border-bottom-width: 3px; }
+  border-bottom-width: 4px; }
 
 .borderWidthLeft-l {
-  border-left-width: 3px; }
+  border-left-width: 4px; }
 
 .borderWidthRight-l {
-  border-right-width: 3px; }
+  border-right-width: 4px; }
+
+.borderWidth-xl {
+  border-width: 8px; }
+
+.borderWidthTop-xl {
+  border-top-width: 8px; }
+
+.borderWidthBottom-xl {
+  border-bottom-width: 8px; }
+
+.borderWidthLeft-xl {
+  border-left-width: 8px; }
+
+.borderWidthRight-xl {
+  border-right-width: 8px; }
 
 .borderRadius-none {
   border-radius: 0; }
