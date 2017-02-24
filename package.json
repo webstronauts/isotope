@@ -1,7 +1,7 @@
 {
   "name": "isotope",
   "description": "The toolkit to build your own Atomic CSS framework upon.",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "license": "MIT",
   "author": "Robin van der Vleuten <robin@webstronauts.co>",
   "homepage": "https://github.com/webstronauts/isotope#readme",
