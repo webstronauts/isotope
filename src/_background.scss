@@ -60,17 +60,33 @@
 // Background Repeat
 // --------------------------------------------------------------------------
 
-@each $value in ( repeat, repeat-x, repeat-y, no-repeat ) {
-  .backgroundRepeat-#{camelize(inspect($value))} {
-    background-repeat: $value;
-  }
+.backgroundRepeat-repeat {
+  background-repeat: repeat;
+}
+
+.backgroundRepeat-repeatX {
+  background-repeat: repeat-x;
+}
+
+.backgroundRepeat-repeatY {
+  background-repeat: repeat-y;
+}
+
+.backgroundRepeat-noRepeat {
+  background-repeat: no-repeat;
 }
 
 // Background Size
 // --------------------------------------------------------------------------
 
-@each $value in ( cover, contain, auto ) {
-  .backgroundSize-#{camelize(inspect($value))} {
-    background-size: $value;
-  }
+.backgroundSize-cover {
+  background-size: cover;
+}
+
+.backgroundSize-contain {
+  background-size: contain;
+}
+
+.backgroundSize-auto {
+  background-size: auto;
 }

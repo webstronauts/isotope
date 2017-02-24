@@ -1,5 +1,4 @@
 const $ = require('gulp-load-plugins')()
-const functions = require('./lib/functions')
 const gulp = require('gulp')
 
 process.on('unhandledRejection', err => {
@@ -8,9 +7,7 @@ process.on('unhandledRejection', err => {
 
 gulp.task('styles', () => (
   gulp.src('src/**/*.scss')
-    .pipe($.sass({
-      functions
-    }).on('error', $.sass.logError))
+    .pipe($.sass().on('error', $.sass.logError))
     .pipe($.postcss())
     .pipe($.rename('isotope.css'))
     .pipe(gulp.dest('./dist'))

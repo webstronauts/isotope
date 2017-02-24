@@ -1,11 +1,31 @@
-@each $value in ( absolute, fixed, relative, static ) {
-  .position-#{camelize(inspect($value))} {
-    position: $value;
-  }
+.position-absolute {
+  position: absolute;
 }
 
-@each $name in ( top, bottom, left, right ) {
-  .#{camelize(inspect($name))}-0 {
-    #{$name}: 0;
-  }
+.position-fixed {
+  position: fixed;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-static {
+  position: static;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
 }

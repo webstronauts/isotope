@@ -19,44 +19,118 @@
 // Flex Direction
 // --------------------------------------------------------------------------
 
-@each $value in ( column, column-reverse, row, row-reverse ) {
-  .flexDirection-#{camelize(inspect($value))} {
-    flex-direction: $value;
-  }
+.flexDirection-column {
+  flex-direction: column;
+}
+
+.flexDirection-columnReverse {
+  flex-direction: column-reverse;
+}
+
+.flexDirection-row {
+  flex-direction: row;
+}
+
+.flexDirection-rowReverse {
+  flex-direction: row-reverse;
 }
 
 // Flex Wrap
 // --------------------------------------------------------------------------
 
-@each $value in ( nowrap, wrap, wrap-reverse, inherit, initial, unset ) {
-  .flexWrap-#{camelize(inspect($value))} {
-    flex-wrap: $value;
-  }
+.flexWrap-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flexWrap-wrap {
+  flex-wrap: wrap;
+}
+
+.flexWrap-wrapReverse {
+  flex-wrap: wrap-reverse;
+}
+
+.flexWrap-inherit {
+  flex-wrap: inherit;
+}
+
+.flexWrap-initial {
+  flex-wrap: initial;
+}
+
+.flexWrap-unset {
+  flex-wrap: unset;
 }
 
 // Justify Content
 // --------------------------------------------------------------------------
 
-@each $value in ( center, flex-start, flex-end, space-around, space-between ) {
-  .justifyContent-#{camelize(inspect($value))} {
-    justify-content: $value;
-  }
+.justifyContent-center {
+  justify-content: center;
+}
+
+.justifyContent-flexStart {
+  justify-content: flex-start;
+}
+
+.justifyContent-flexEnd {
+  justify-content: flex-end;
+}
+
+.justifyContent-spaceAround {
+  justify-content: space-around;
+}
+
+.justifyContent-spaceBetween {
+  justify-content: space-between;
 }
 
 // Align Items
 // --------------------------------------------------------------------------
 
-@each $value in ( center, flex-start, flex-end, space-around, space-between, stretch ) {
-  .alignItems-#{camelize(inspect($value))} {
-    align-items: $value;
-  }
+.alignItems-center {
+  align-items: center;
+}
+
+.alignItems-flexStart {
+  align-items: flex-start;
+}
+
+.alignItems-flexEnd {
+  align-items: flex-end;
+}
+
+.alignItems-spaceAround {
+  align-items: space-around;
+}
+
+.alignItems-spaceBetween {
+  align-items: space-between;
+}
+
+.alignItems-stretch {
+  align-items: stretch;
 }
 
 // Align Content
 // --------------------------------------------------------------------------
 
-@each $value in ( center, flex-start, flex-end, stretch, baseline ) {
-  .alignContent-#{camelize(inspect($value))} {
-    align-content: $value;
-  }
+.alignContent-center {
+  align-content: center;
+}
+
+.alignContent-flexStart {
+  align-content: flex-start;
+}
+
+.alignContent-flexEnd {
+  align-content: flex-end;
+}
+
+.alignContent-stretch {
+  align-content: stretch;
+}
+
+.alignContent-baseline {
+  align-content: baseline;
 }

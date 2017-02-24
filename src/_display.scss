@@ -1,8 +1,22 @@
 // Display
 // --------------------------------------------------------------------------
 
-@each $value in ( block, inline-block, flex, inline-flex, none ) {
-  .display-#{camelize(inspect($value))} {
-    display: $value;
-  }
+.display-block {
+  display: block;
+}
+
+.display-inlineBlock {
+  display: inline-block;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.display-inlineFlex {
+  display: inline-flex;
+}
+
+.display-none {
+  display: none;
 }

@@ -1,8 +1,10 @@
 // Box Sizing
 // --------------------------------------------------------------------------
 
-@each $value in ( border-box, content-box ) {
-  .boxSizing-#{camelize(inspect($value))} {
-    box-sizing: $value;
-  }
+.boxSizing-borderBox {
+  box-sizing: border-box;
+}
+
+.boxSizing-contentBox {
+  box-sizing: content-box;
 }

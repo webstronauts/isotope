@@ -28,10 +28,6 @@
     "test": "NODE_ENV=development npm run build && standard && stylelint src/**/*.scss && immutable-css dist/isotope.css",
     "watch": "NODE_ENV=development gulp watch"
   },
-  "dependencies": {
-    "camelcase": "^4.0.0",
-    "titleize": "^1.0.0"
-  },
   "devDependencies": {
     "autoprefixer": "^6.5.3",
     "concurrently": "^3.1.0",

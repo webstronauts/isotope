@@ -2,7 +2,7 @@
 // --------------------------------------------------------------------------
 
 @each $name, $value in $transitionDuration-values {
-  .transitionDuration-#{camelize(inspect($name))} {
+  .transitionDuration-#{$name} {
     transition-duration: $value;
   }
 }
@@ -10,17 +10,33 @@
 // Transition Property
 // --------------------------------------------------------------------------
 
-@each $value in ( all, none ) {
-  .transitionProperty-#{camelize(inspect($value))} {
-    transition-property: $value;
-  }
+.transitionProperty-all {
+  transition-property: all;
+}
+
+.transitionProperty-none {
+  transition-property: none;
 }
 
 // Transition Timing Function
 // --------------------------------------------------------------------------
 
-@each $value in ( linear, ease, ease-in, ease-out, ease-in-out ) {
-  .transitionTimingFunction-#{camelize(inspect($value))} {
-    transition-timing-function: $value;
-  }
+.transitionTimingFunction-linear {
+  transition-timing-function: linear;
+}
+
+.transitionTimingFunction-ease {
+  transition-timing-function: ease;
+}
+
+.transitionTimingFunction-easeIn {
+  transition-timing-function: ease-in;
+}
+
+.transitionTimingFunction-easeOut {
+  transition-timing-function: ease-out;
+}
+
+.transitionTimingFunction-easeInOut {
+  transition-timing-function: ease-in-out;
 }

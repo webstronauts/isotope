@@ -1,53 +1,125 @@
 // Text Align
 // --------------------------------------------------------------------------
 
-@each $value in ( initial, left, right, center, justify ) {
-  .textAlign-#{camelize(inspect($value))} {
-    text-align: $value;
-  }
+.textAlign-initial {
+  text-align: initial;
+}
+
+.textAlign-left {
+  text-align: left;
+}
+
+.textAlign-right {
+  text-align: right;
+}
+
+.textAlign-center {
+  text-align: center;
+}
+
+.textAlign-justify {
+  text-align: justify;
 }
 
 // Text Decoration
 // --------------------------------------------------------------------------
 
-@each $value in ( line-through, none, overline, underline ) {
-  .textDecoration-#{camelize(inspect($value))} {
-    text-decoration: $value;
-  }
+.textDecoration-lineThrough {
+  text-decoration: line-through;
+}
+
+.textDecoration-none {
+  text-decoration: none;
+}
+
+.textDecoration-overline {
+  text-decoration: overline;
+}
+
+.textDecoration-underline {
+  text-decoration: underline;
 }
 
 // Text Overflow
 // --------------------------------------------------------------------------
 
-@each $value in ( clip, ellipsis, string ) {
-  .textOverflow-#{camelize(inspect($value))} {
-    text-overflow: $value;
-  }
+.textOverflow-clip {
+  text-overflow: clip;
+}
+
+.textOverflow-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.textOverflow-string {
+  text-overflow: string;
 }
 
 // Text Transform
 // --------------------------------------------------------------------------
 
-@each $value in ( capitalize, full-width, lowercase, none, uppercase, inherit ) {
-  .textTransform-#{camelize(inspect($value))} {
-    text-transform: $value;
-  }
+.textTransform-capitalize {
+  text-transform: capitalize;
+}
+
+.textTransform-fullWidth {
+  text-transform: full-width;
+}
+
+.textTransform-lowercase {
+  text-transform: lowercase;
+}
+
+.textTransform-none {
+  text-transform: none;
+}
+
+.textTransform-uppercase {
+  text-transform: uppercase;
+}
+
+.textTransform-inherit {
+  text-transform: inherit;
 }
 
 // Text Rendering
 // --------------------------------------------------------------------------
 
-@each $value in ( optimizeLegibility, geometricPrecision, optimizeSpeed, auto ) {
-  .textRendering-#{camelize(inspect($value))} {
-    text-rendering: $value;
-  }
+.textRendering-optimizeLegibility {
+  text-rendering: optimizeLegibility;
+}
+
+.textRendering-geometricPrecision {
+  text-rendering: geometricPrecision;
+}
+
+.textRendering-optimizeSpeed {
+  text-rendering: optimizeSpeed;
+}
+
+.textRendering-auto {
+  text-rendering: auto;
 }
 
 // White Space
 // --------------------------------------------------------------------------
 
-@each $whiteSpace in ( normal, nowrap, pre, pre-line, pre-wrap ) {
-  .whiteSpace-#{camelize($whiteSpace)} {
-    white-space: $whiteSpace;
-  }
+.whiteSpace-normal {
+  white-space: normal;
+}
+
+.whiteSpace-nowrap {
+  white-space: nowrap;
+}
+
+.whiteSpace-pre {
+  white-space: pre;
+}
+
+.whiteSpace-preLine {
+  white-space: pre-line;
+}
+
+.whiteSpace-preWrap {
+  white-space: pre-wrap;
 }

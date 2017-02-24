@@ -3,22 +3,32 @@
 
 @each $property in ( margin, padding ) {
   @each $name, $value in $spacing-values {
-    .#{$property}-#{camelize(inspect($name))} {
+    .#{$property}-#{$name} {
       #{$property}: #{$value};
     }
 
-    @each $direction in ( top, bottom, left, right ) {
-      .#{$property}#{titleize(inspect($direction))}-#{camelize(inspect($name))} {
-        #{$property}-#{$direction}: #{$value};
-      }
+    .#{$property}Top-#{$name} {
+      #{$property}-top: #{$value};
     }
 
-    .#{$property}Horizontal-#{camelize(inspect($name))} {
+    .#{$property}Bottom-#{$name} {
+      #{$property}-bottom: #{$value};
+    }
+
+    .#{$property}Left-#{$name} {
+      #{$property}-left: #{$value};
+    }
+
+    .#{$property}Right-#{$name} {
+      #{$property}-right: #{$value};
+    }
+
+    .#{$property}Horizontal-#{$name} {
       #{$property}-left: #{$value};
       #{$property}-right: #{$value};
     }
 
-    .#{$property}Vertical-#{camelize(inspect($name))} {
+    .#{$property}Vertical-#{$name} {
       #{$property}-bottom: #{$value};
       #{$property}-top: #{$value};
     }
@@ -37,16 +47,86 @@
 // Overflow
 // --------------------------------------------------------------------------
 
-@each $value in ( visible, hidden, scroll, auto, inherit, initial, unset ) {
-  .overflow-#{camelize(inspect($value))} {
-    overflow: $value;
-  }
+.overflow-visible {
+  overflow: visible;
+}
 
-  .overflowX-#{camelize(inspect($value))} {
-    overflow-x: $value;
-  }
+.overflowX-visible {
+  overflow-x: visible;
+}
 
-  .overflowY-#{camelize(inspect($value))} {
-    overflow-y: $value;
-  }
+.overflowY-visible {
+  overflow-y: visible;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflowX-hidden {
+  overflow-x: hidden;
+}
+
+.overflowY-hidden {
+  overflow-y: hidden;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflowX-scroll {
+  overflow-x: scroll;
+}
+
+.overflowY-scroll {
+  overflow-y: scroll;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflowX-auto {
+  overflow-x: auto;
+}
+
+.overflowY-auto {
+  overflow-y: auto;
+}
+
+.overflow-inherit {
+  overflow: inherit;
+}
+
+.overflowX-inherit {
+  overflow-x: inherit;
+}
+
+.overflowY-inherit {
+  overflow-y: inherit;
+}
+
+.overflow-initial {
+  overflow: initial;
+}
+
+.overflowX-initial {
+  overflow-x: initial;
+}
+
+.overflowY-initial {
+  overflow-y: initial;
+}
+
+.overflow-unset {
+  overflow: unset;
+}
+
+.overflowX-unset {
+  overflow-x: unset;
+}
+
+.overflowY-unset {
+  overflow-y: unset;
 }
