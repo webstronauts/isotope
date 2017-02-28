@@ -38,5 +38,6 @@ select {
 }
 
 th {
+  @extend .fontWeight-normal;
   @extend .textAlign-left;
 }

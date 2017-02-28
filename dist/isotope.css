@@ -879,7 +879,7 @@ textarea {
 .fontWeight-bolder {
   font-weight: bolder; }
 
-.fontWeight-normal {
+.fontWeight-normal, th {
   font-weight: normal; }
 
 .fontWeight-lighter {
