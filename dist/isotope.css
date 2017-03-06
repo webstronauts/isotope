@@ -1616,6 +1616,9 @@ select {
 .textRendering-auto {
   text-rendering: auto; }
 
+.textShadow-none {
+  text-shadow: none; }
+
 .whiteSpace-normal {
   white-space: normal; }
 
