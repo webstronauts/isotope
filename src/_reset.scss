@@ -20,6 +20,10 @@ a {
   @extend .textDecoration-none;
 }
 
+ul {
+  @extend .listStyleType-none;
+}
+
 button,
 input,
 select,
@@ -35,6 +39,10 @@ textarea {
 button,
 select {
   @extend .textTransform-none;
+}
+
+table {
+  @extend .borderCollapse-collapse;
 }
 
 th {
