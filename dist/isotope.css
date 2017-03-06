@@ -838,6 +838,12 @@ textarea {
 .fontFamily-serif {
   font-family: serif; }
 
+.fontFamily-inherit, button,
+input,
+select,
+textarea {
+  font-family: inherit; }
+
 .fontSize-s {
   font-size: 0.875rem; }
 

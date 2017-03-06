@@ -32,6 +32,7 @@ textarea {
   @extend .backgroundColor-transparent;
   @extend .borderWidth-none;
   @extend .color-inherit;
+  @extend .fontFamily-inherit;
   @extend .fontSize-m;
   @extend .outlineStyle-none;
 }
