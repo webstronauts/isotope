@@ -14,11 +14,7 @@
   background-color: #f03e3e; }
 
 .backgroundColor-none,
-.backgroundColor-transparent,
-button,
-input,
-select,
-textarea {
+.backgroundColor-transparent {
   background-color: transparent; }
 
 .backgroundImage-none {
@@ -72,7 +68,7 @@ textarea {
 .backgroundSize-auto {
   background-size: auto; }
 
-.borderCollapse-collapse, table {
+.borderCollapse-collapse {
   border-collapse: collapse; }
 
 .borderCollapse-separate {
@@ -96,10 +92,7 @@ textarea {
 .borderStyle-solid {
   border-style: solid; }
 
-.borderWidth-none, button,
-input,
-select,
-textarea {
+.borderWidth-none {
   border-width: 0; }
 
 .borderWidthTop-none {
@@ -366,9 +359,7 @@ textarea {
 .borderSpacing-none {
   border-spacing: 0; }
 
-.boxSizing-borderBox, *,
-*::before,
-*::after {
+.boxSizing-borderBox {
   box-sizing: border-box; }
 
 .boxSizing-contentBox {
@@ -392,10 +383,7 @@ textarea {
 .color-negative {
   color: #f03e3e; }
 
-.color-inherit, button,
-input,
-select,
-textarea {
+.color-inherit {
   color: inherit; }
 
 .fill-black {
@@ -841,24 +829,13 @@ textarea {
 .fontFamily-serif {
   font-family: serif; }
 
-.fontFamily-inherit, button,
-input,
-select,
-textarea {
+.fontFamily-inherit {
   font-family: inherit; }
 
 .fontSize-s {
   font-size: 0.875rem; }
 
-.fontSize-m, h1,
-h2,
-h3,
-h4,
-h5,
-h6, button,
-input,
-select,
-textarea {
+.fontSize-m {
   font-size: 1rem; }
 
 .fontSize-l {
@@ -888,7 +865,7 @@ textarea {
 .fontWeight-bolder {
   font-weight: bolder; }
 
-.fontWeight-normal, th {
+.fontWeight-normal {
   font-weight: normal; }
 
 .fontWeight-lighter {
@@ -903,12 +880,7 @@ textarea {
 .fontWeight-3 {
   font-weight: 300; }
 
-.fontWeight-4, h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.fontWeight-4 {
   font-weight: 400; }
 
 .fontWeight-5 {
@@ -941,10 +913,7 @@ h6 {
 .lineHeight-xxl {
   line-height: 2; }
 
-.appearance-none, button,
-input,
-select,
-textarea {
+.appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none; }
@@ -1016,10 +985,7 @@ textarea {
 .cursor-zoomOut {
   cursor: zoom-out; }
 
-.outlineStyle-none, button,
-input,
-select,
-textarea {
+.outlineStyle-none {
   outline-style: none; }
 
 .pointerEvents-auto {
@@ -1040,7 +1006,7 @@ textarea {
 .listStyleType-disc {
   list-style-type: disc; }
 
-.listStyleType-none, ul {
+.listStyleType-none {
   list-style-type: none; }
 
 .position-absolute {
@@ -1067,9 +1033,7 @@ textarea {
 .right-0 {
   right: 0; }
 
-.margin-none, *,
-*::before,
-*::after {
+.margin-none {
   margin: 0; }
 
 .marginTop-none {
@@ -1276,9 +1240,7 @@ textarea {
   margin-bottom: 16rem;
   margin-top: 16rem; }
 
-.padding-none, *,
-*::before,
-*::after {
+.padding-none {
   padding: 0; }
 
 .paddingTop-none {
@@ -1588,7 +1550,7 @@ textarea {
 .textAlign-initial {
   text-align: initial; }
 
-.textAlign-left, th {
+.textAlign-left {
   text-align: left; }
 
 .textAlign-right {
@@ -1603,7 +1565,7 @@ textarea {
 .textDecoration-lineThrough {
   text-decoration: line-through; }
 
-.textDecoration-none, a {
+.textDecoration-none {
   text-decoration: none; }
 
 .textDecoration-overline {
@@ -1630,8 +1592,7 @@ textarea {
 .textTransform-lowercase {
   text-transform: lowercase; }
 
-.textTransform-none, button,
-select {
+.textTransform-none {
   text-transform: none; }
 
 .textTransform-uppercase {
