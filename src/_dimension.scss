@@ -3,7 +3,7 @@
 
 @each $property in ( width, height ) {
   @each $name, $value in $dimension-values {
-    .#{$property}-#{capitalize(inspect($name))} {
+    .#{$property}-#{$name} {
       #{$property}: $value;
     }
   }

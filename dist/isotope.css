@@ -401,6 +401,21 @@
 .fill-negative {
   fill: #f03e3e; }
 
+.width-s {
+  width: 1rem; }
+
+.width-m {
+  width: 2rem; }
+
+.width-l {
+  width: 4rem; }
+
+.width-xl {
+  width: 8rem; }
+
+.width-xxl {
+  width: 16rem; }
+
 .width-10 {
   width: 10%; }
 
@@ -529,6 +544,21 @@
 
 .width-auto {
   width: auto; }
+
+.height-s {
+  height: 1rem; }
+
+.height-m {
+  height: 2rem; }
+
+.height-l {
+  height: 4rem; }
+
+.height-xl {
+  height: 8rem; }
+
+.height-xxl {
+  height: 16rem; }
 
 .height-10 {
   height: 10%; }
