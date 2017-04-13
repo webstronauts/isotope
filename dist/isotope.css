@@ -363,6 +363,9 @@ textarea {
 .borderRadiusTopRight-circle {
   border-radius: 0 50% 0 0; }
 
+.borderSpacing-none {
+  border-spacing: 0; }
+
 .boxSizing-borderBox, *,
 *::before,
 *::after {
