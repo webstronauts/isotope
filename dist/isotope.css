@@ -870,6 +870,9 @@ textarea {
 .fontSize-xxxl {
   font-size: 3rem; }
 
+.fontSize-inherit {
+  font-size: inherit; }
+
 .fontStyle-normal {
   font-style: normal; }
 
