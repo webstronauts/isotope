@@ -1480,7 +1480,23 @@
 .margin-auto {
   margin: auto; }
 
+.marginTop-auto {
+  margin-top: auto; }
+
+.marginBottom-auto {
+  margin-bottom: auto; }
+
+.marginLeft-auto {
+  margin-left: auto; }
+
+.marginRight-auto {
+  margin-right: auto; }
+
 .marginHorizontal-auto {
+  margin-left: auto;
+  margin-right: auto; }
+
+.marginVertical-auto {
   margin-left: auto;
   margin-right: auto; }
 
