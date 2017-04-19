@@ -1740,3 +1740,36 @@
 .transitionTimingFunction-easeInOut {
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out; }
+
+.zIndex-100 {
+  z-index: 100; }
+
+.zIndex-200 {
+  z-index: 200; }
+
+.zIndex-300 {
+  z-index: 300; }
+
+.zIndex-400 {
+  z-index: 400; }
+
+.zIndex-500 {
+  z-index: 500; }
+
+.zIndex-600 {
+  z-index: 600; }
+
+.zIndex-700 {
+  z-index: 700; }
+
+.zIndex-800 {
+  z-index: 800; }
+
+.zIndex-900 {
+  z-index: 900; }
+
+.zIndex-negative {
+  z-index: -1; }
+
+.zIndex-max {
+  z-index: 9999; }

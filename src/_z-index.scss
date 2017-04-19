@@ -1,0 +1,13 @@
+@for $value from 1 through 9 {
+  .zIndex-#{$value * 100} {
+    z-index: $value * 100;
+  }
+}
+
+.zIndex-negative {
+  z-index: -1;
+}
+
+.zIndex-max {
+  z-index: 9999;
+}
