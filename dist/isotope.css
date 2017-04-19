@@ -365,6 +365,12 @@
 .boxSizing-contentBox {
   box-sizing: content-box; }
 
+.boxSizing-paddingBox {
+  box-sizing: padding-box; }
+
+.boxSizing-inherit {
+  box-sizing: inherit; }
+
 .boxShadow-none {
   box-shadow: none; }
 
