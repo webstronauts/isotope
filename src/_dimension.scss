@@ -8,6 +8,10 @@
     }
   }
 
+  .#{$property}-none {
+    #{$property}: 0;
+  }
+
   @for $value from 10 through 100 {
     @if $value % 5 == 0 {
       .#{$property}-#{$value} {

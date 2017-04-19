@@ -422,6 +422,9 @@
 .width-xxl {
   width: 16rem; }
 
+.width-none {
+  width: 0; }
+
 .width-10 {
   width: 10%; }
 
@@ -565,6 +568,9 @@
 
 .height-xxl {
   height: 16rem; }
+
+.height-none {
+  height: 0; }
 
 .height-10 {
   height: 10%; }
