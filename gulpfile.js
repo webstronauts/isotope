@@ -7,7 +7,7 @@ process.on('unhandledRejection', err => {
 })
 
 gulp.task('clean', () =>
-  del('dist/**') 
+  del('dist/**')
 )
 
 gulp.task('styles', ['clean'], () => (
