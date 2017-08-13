@@ -24,9 +24,26 @@ $lineHeight-values: ( s: 1, m: 1, l: 1.25, xl: 1.5, xxl: 2 ) !default;
 // Spacing
 // --------------------------------------------------------------------------
 
-$spacing-values: ( none: 0, xxs: 0.125rem, xs: 0.25rem, s: 0.5rem, m: 1rem, l: 2rem, xl: 4rem, xxl: 8rem, xxxl: 16rem ) !default;
+$spacing-values: (
+	xxs: 0.125rem, // 2px
+	xs: 0.25rem,   // 4px
+	s: 0.5rem,     // 8px
+	m: 1rem,       // 16px
+	l: 1.5rem,	   // 24px
+	xl: 2rem, 	   // 32px
+	xxl: 2.5rem,   // 40px
+	xxxl: 3rem,    // 48px
+	xxxxl: 3.5rem, // 54px
+	xxxxxl: 4rem,  // 64px
+) !default;
 
 // Transition
 // --------------------------------------------------------------------------
 
-$transitionDuration-values: ( s: 80ms, m: 0.15s, l: 0.3s, xl: 0.5s, xxl: 0.7, none: 0 ) !default;
+$transitionDuration-values: ( 
+	s: 80ms, 
+	m: 0.15s, 
+	l: 0.3s, 
+	xl: 0.5s, 
+	xxl: 0.7s
+) !default;

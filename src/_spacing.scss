@@ -2,7 +2,7 @@
 // --------------------------------------------------------------------------
 
 @each $property in ( margin, padding ) {
-  @each $name, $value in $spacing-values {
+  @each $name, $value in join($spacing-values, if($property == margin, ( none: 0, auto: auto ), ( none: 0 ))) {
     .#{$property}-#{$name} {
       #{$property}: #{$value};
     }
@@ -33,36 +33,6 @@
       #{$property}-top: #{$value};
     }
   }
-}
-
-.margin-auto {
-  margin: auto;
-}
-
-.marginTop-auto {
-  margin-top: auto;
-}
-
-.marginBottom-auto {
-  margin-bottom: auto;
-}
-
-.marginLeft-auto {
-  margin-left: auto;
-}
-
-.marginRight-auto {
-  margin-right: auto;
-}
-
-.marginHorizontal-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.marginVertical-auto {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 // Overflow

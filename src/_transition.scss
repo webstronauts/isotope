@@ -1,7 +1,7 @@
 // Transition Duration
 // --------------------------------------------------------------------------
 
-@each $name, $value in $transitionDuration-values {
+@each $name, $value in join($transitionDuration-values, ( none: 0 )) {
   .transitionDuration-#{$name} {
     transition-duration: $value;
   }
