@@ -40,7 +40,7 @@
     "gulp-sass": "^3.1.0",
     "husky": "^0.13.1",
     "immutable-css-cli": "^1.1.1",
-    "node-sass": "^4.3.0",
+    "node-sass": "^4.5.3",
     "serve": "^2.4.1",
     "standard": "*",
     "stylelint": "^7.7.1",
