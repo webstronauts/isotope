@@ -11,8 +11,7 @@ gulp.task('clean', () =>
 )
 
 gulp.task('styles', ['clean'], () => (
-  gulp.src('src/**/*.scss')
-    .pipe($.sass().on('error', $.sass.logError))
+  gulp.src('src/postcss.css')
     .pipe($.postcss())
     .pipe($.rename('isotope.css'))
     .pipe(gulp.dest('./dist'))
