@@ -4,7 +4,7 @@
   "version": "1.0.0-alpha.3",
   "license": "MIT",
   "author": "Robin van der Vleuten <robin@webstronauts.co>",
-  "main": "lib/index.js",
+  "main": "index.js",
   "keywords": [
     "postcss",
     "utility",
