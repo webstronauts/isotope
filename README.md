@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/webstronauts/isotope.svg?branch=master)](https://travis-ci.org/webstronauts/isotope)
 
-The Atomic toolkit to build your own CSS framework upon.
+The [POSTCSS](http://postcss.org/) toolkit to build your own utility-based CSS framework upon.
 
 ## How to use
 

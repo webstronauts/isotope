@@ -1,6 +1,6 @@
 {
   "name": "isotope",
-  "description": "The Atomic toolkit to build your own CSS framework upon.",
+  "description": "The POSTCSS toolkit to build your own utility-based CSS framework upon.",
   "version": "1.0.0-alpha.3",
   "license": "MIT",
   "author": "Robin van der Vleuten <robin@webstronauts.co>",
