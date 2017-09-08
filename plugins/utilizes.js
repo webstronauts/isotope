@@ -3,9 +3,14 @@ const postcss = require('postcss')
 
 const generateSelectorRegExp = selector => {
   const [className, state] = selector.split(':')
-
-  return new RegExp(`^(${escapeStringRegexp(className.indexOf('.') === 0 ? className.substr(1) : className )})${state ? `(?:\\:(${escapeStringRegexp(state)}))*` : ''}$`)
+  return new RegExp(`^(${escapeStringRegexp(className.indexOf('.') === 0 ? className.substr(1) : className)})${state ? `(?:\\:(${escapeStringRegexp(state)}))*` : ''}$`)
 }
+
+const ruleHasSelector = (rule, selector) =>
+  rule.selectors.find(sel => generateSelectorRegExp(sel).test(selector))
+
+const copyDeclsToRule = (rule, after) => decl => 
+  rule.insertAfter(after, decl.clone())
 
 /**
  * Usage:
@@ -34,11 +39,11 @@ module.exports = postcss.plugin('isotope-plugin-utilizes', () => (root, result) 
       let found = false
 
       root.walkRules(new RegExp(`\\.${utilitySelector}`), utilityRule => {
-        if (!utilityRule.selectors.find(selector => generateSelectorRegExp(selector).test(utilitySelector))) {
+        if (!ruleHasSelector(utilityRule, utilitySelector)) {
           return
         }
 
-        utilityRule.walkDecls(utilityDecl => decl.parent.insertAfter(decl, utilityDecl.clone()))
+        utilityRule.walkDecls(copyDeclsToRule(decl.parent, decl))
         found = true
       })
 
