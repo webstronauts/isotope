@@ -9,15 +9,6 @@
   border-collapse: separate;
 }
 
-// Border Color
-// --------------------------------------------------------------------------
-
-@each $name, $value in $color-values {
-  .borderColor-#{$name} {
-    border-color: $value;
-  }
-}
-
 // Border Style
 // --------------------------------------------------------------------------
 

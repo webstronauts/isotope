@@ -27,6 +27,7 @@
     "watch": "NODE_ENV=development gulp watch"
   },
   "dependencies": {
+    "camelcase": "^4.1.0",
     "escape-string-regexp": "^1.0.5",
     "postcss": "^6.0.11"
   },
