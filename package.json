@@ -4,14 +4,16 @@
   "version": "1.0.0-alpha.3",
   "license": "MIT",
   "author": "Robin van der Vleuten <robin@webstronauts.co>",
+  "main": "lib/index.js",
+  "keywords": [
+    "postcss",
+    "utility",
+    "framework",
+    "atomic"
+  ],
+  "repository": "webstronauts/isotope",
   "homepage": "https://github.com/webstronauts/isotope#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/webstronauts/isotope"
-  },
-  "bugs": {
-    "url": "https://github.com/webstronauts/isotope/issues"
-  },
+  "bugs": "https://github.com/webstronauts/isotope/issues",
   "files": [
     "dist",
     "src",
