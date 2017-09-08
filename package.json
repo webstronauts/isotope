@@ -15,8 +15,6 @@
   "homepage": "https://github.com/webstronauts/isotope#readme",
   "bugs": "https://github.com/webstronauts/isotope/issues",
   "files": [
-    "dist",
-    "src",
     "LICENSE",
     "README.md"
   ],
@@ -32,8 +30,6 @@
     }
   },
   "scripts": {
-    "build": "NODE_ENV=production gulp",
-    "start": "concurrently \"serve -p 5000 .\" \"npm run watch\"",
     "test": "xo"
   },
   "dependencies": {
@@ -42,16 +38,6 @@
     "postcss": "^6.0.11"
   },
   "devDependencies": {
-    "concurrently": "^3.1.0",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-cli": "^1.2.2",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-livereload": "^3.8.1",
-    "gulp-load-plugins": "^1.4.0",
-    "gulp-postcss": "^6.2.0",
-    "gulp-rename": "^1.2.2",
-    "serve": "^2.4.1",
     "xo": "^0.18.2"
   }
 }

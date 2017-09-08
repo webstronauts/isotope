@@ -9,7 +9,7 @@ const generateSelectorRegExp = selector => {
 const ruleHasSelector = (rule, selector) =>
   rule.selectors.find(sel => generateSelectorRegExp(sel).test(selector))
 
-const copyDeclsToRule = (rule, after) => decl => 
+const copyDeclsToRule = (rule, after) => decl =>
   rule.insertAfter(after, decl.clone())
 
 /**
