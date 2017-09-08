@@ -14,10 +14,6 @@
   "repository": "webstronauts/isotope",
   "homepage": "https://github.com/webstronauts/isotope#readme",
   "bugs": "https://github.com/webstronauts/isotope/issues",
-  "files": [
-    "LICENSE",
-    "README.md"
-  ],
   "xo": {
     "esnext": true,
     "space": true,
