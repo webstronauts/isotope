@@ -18,10 +18,21 @@
     "LICENSE",
     "README.md"
   ],
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "semicolon": false,
+    "rules": {
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ]
+    }
+  },
   "scripts": {
     "build": "NODE_ENV=production gulp",
     "start": "concurrently \"serve -p 5000 .\" \"npm run watch\"",
-    "test": "standard"
+    "test": "xo"
   },
   "dependencies": {
     "camelcase": "^4.1.0",
@@ -39,6 +50,6 @@
     "gulp-postcss": "^6.2.0",
     "gulp-rename": "^1.2.2",
     "serve": "^2.4.1",
-    "standard": "*"
+    "xo": "^0.18.2"
   }
 }
