@@ -1,0 +1,19 @@
+/**
+ * Width
+ */
+
+@each $size in 25%, (100% / 3), 50%, (100% / 3 * 2), 75%, 100%, auto {
+  .w-#{if(type-of($size) == "number", floor($size / 1%), $size)} {
+    width: $size;
+  }
+}
+
+/**
+ * Height
+ */
+
+@each $size in 25%, (100% / 3), 50%, (100% / 3 * 2), 75%, 100%, auto {
+  .h-#{if(type-of($size) == "number", floor($size / 1%), $size)} {
+    height: $size;
+  }
+}

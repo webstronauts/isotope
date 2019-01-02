@@ -1,123 +1,72 @@
-// Spacing
-// --------------------------------------------------------------------------
+/**
+ * Margin
+ */
 
-@each $property in ( margin, padding ) {
-  @each $name, $value in join($spacing-values, if($property == margin, ( none: 0, auto: auto ), ( none: 0 ))) {
-    .#{$property}-#{$name} {
-      #{$property}: #{$value};
-    }
+@for $i from 0 through 16 {
+  $value: $i * 0.25rem;
 
-    .#{$property}Top-#{$name} {
-      #{$property}-top: #{$value};
-    }
+  .m-#{$i} {
+    margin: $value;
+  }
 
-    .#{$property}Bottom-#{$name} {
-      #{$property}-bottom: #{$value};
-    }
+  .mx-#{$i} {
+    margin-left: $value;
+    margin-right: $value;
+  }
 
-    .#{$property}Left-#{$name} {
-      #{$property}-left: #{$value};
-    }
+  .my-#{$i} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
 
-    .#{$property}Right-#{$name} {
-      #{$property}-right: #{$value};
-    }
-
-    .#{$property}Horizontal-#{$name} {
-      #{$property}-left: #{$value};
-      #{$property}-right: #{$value};
-    }
-
-    .#{$property}Vertical-#{$name} {
-      #{$property}-bottom: #{$value};
-      #{$property}-top: #{$value};
+  @each $direction in top, bottom, left, right {
+    .m#{str-slice($direction, 0, 1)}-#{$i} {
+      margin-#{$direction}: $value;
     }
   }
 }
 
-// Overflow
-// --------------------------------------------------------------------------
-
-.overflow-visible {
-  overflow: visible;
+@each $direction in top, bottom, left, right {
+  .m#{str-slice($direction, 0, 1)}-auto {
+    margin-#{$direction}: auto;
+  }
 }
 
-.overflowX-visible {
-  overflow-x: visible;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.overflowY-visible {
-  overflow-y: visible;
+/**
+ * Padding
+ */
+
+@for $i from 0 through 16 {
+  $value: $i * 0.25rem;
+
+  .p-#{$i} {
+    padding: $value;
+  }
+
+  .px-#{$i} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+
+  .py-#{$i} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+
+  @each $direction in top, bottom, left, right {
+    .p#{str-slice($direction, 0, 1)}-#{$i} {
+      padding-#{$direction}: $value;
+    }
+  }
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
-.overflowX-hidden {
-  overflow-x: hidden;
-}
-
-.overflowY-hidden {
-  overflow-y: hidden;
-}
-
-.overflow-scroll {
-  overflow: scroll;
-}
-
-.overflowX-scroll {
-  overflow-x: scroll;
-}
-
-.overflowY-scroll {
-  overflow-y: scroll;
-}
-
-.overflow-auto {
-  overflow: auto;
-}
-
-.overflowX-auto {
-  overflow-x: auto;
-}
-
-.overflowY-auto {
-  overflow-y: auto;
-}
-
-.overflow-inherit {
-  overflow: inherit;
-}
-
-.overflowX-inherit {
-  overflow-x: inherit;
-}
-
-.overflowY-inherit {
-  overflow-y: inherit;
-}
-
-.overflow-initial {
-  overflow: initial;
-}
-
-.overflowX-initial {
-  overflow-x: initial;
-}
-
-.overflowY-initial {
-  overflow-y: initial;
-}
-
-.overflow-unset {
-  overflow: unset;
-}
-
-.overflowX-unset {
-  overflow-x: unset;
-}
-
-.overflowY-unset {
-  overflow-y: unset;
+@each $direction in top, bottom, left, right {
+  .p#{str-slice($direction, 0, 1)}-auto {
+    padding-#{$direction}: auto;
+  }
 }

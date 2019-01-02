@@ -1,49 +1,9 @@
-// Border
-// --------------------------------------------------------------------------
-
-$borderWidth-values: ( none: 0, s: 1px, m: 2px, l: 4px, xl: 8px ) !default;
-$borderRadius-values: ( none: 0, s: 0.125rem, m: 0.25rem, l: 0.5rem, xl: 1rem, xxl: 2rem, circle: 50% ) !default;
-
 // Color
 // --------------------------------------------------------------------------
 
-$color-values: ( black: #212529, white: #fff, primary: #329af0, positive: #40c057, negative: #f03e3e ) !default;
+$colors: ( black: #212529, white: #fff, primary: #329af0, positive: #40c057, negative: #f03e3e ) !default;
 
-// Dimension
+// Text
 // --------------------------------------------------------------------------
 
-$dimension-values: ( s: 1rem, m: 2rem, l: 4rem, xl: 8rem, xxl: 16rem ) !default;
-
-// Font
-// --------------------------------------------------------------------------
-
-$fontFamily-values: ( sans-serif: sans-serif, serif: serif ) !default;
-$fontSize-values: ( s: 0.875rem, m: 1rem, l: 1.25rem, xl: 1.5rem, xxl: 2.25rem, xxxl: 3rem ) !default;
-$lineHeight-values: ( s: 1, m: 1, l: 1.25, xl: 1.5, xxl: 2 ) !default;
-
-// Spacing
-// --------------------------------------------------------------------------
-
-$spacing-values: (
-  xxs: 0.125rem, // 2px
-  xs: 0.25rem,   // 4px
-  s: 0.5rem,     // 8px
-  m: 1rem,       // 16px
-  l: 1.5rem,     // 24px
-  xl: 2rem,      // 32px
-  xxl: 2.5rem,   // 40px
-  xxxl: 3rem,    // 48px
-  xxxxl: 3.5rem, // 54px
-  xxxxxl: 4rem,  // 64px
-) !default;
-
-// Transition
-// --------------------------------------------------------------------------
-
-$transitionDuration-values: (
-  s: 80ms,
-  m: 0.15s,
-  l: 0.3s,
-  xl: 0.5s,
-  xxl: 0.7s
-) !default;
+$text-scales: ( h1: 2rem, h2: 1.5rem, h3: 1.25rem, h4: 1rem, h5: 0.875rem, h6: 0.75rem ) !default;
