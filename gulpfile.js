@@ -6,12 +6,12 @@ process.on('unhandledRejection', err => {
   throw err
 })
 
-gulp.task('clean', () =>
-  del('dist/**')
-)
+function clean () {
+  return del('dist/**')
+}
 
-gulp.task('styles', ['clean'], () => (
-  gulp.src('src/**/*.scss')
+function styles () {
+  return gulp.src('src/**/*.scss')
     .pipe($.sass().on('error', $.sass.logError))
     .pipe($.postcss())
     .pipe($.rename('isotope.css'))
@@ -20,10 +20,12 @@ gulp.task('styles', ['clean'], () => (
     .pipe($.rename('isotope.min.css'))
     .pipe(gulp.dest('./dist'))
     .pipe($.livereload())
-))
+}
 
-gulp.task('default', ['styles'])
+exports.build = gulp.series(clean, styles)
 
-gulp.task('watch', ['default'], () => {
-  gulp.watch('src/**/*.scss', ['styles'])
-})
+function watch () {
+  gulp.watch('src/**/*.scss', styles)
+}
+
+exports.watch = gulp.series(clean, styles, watch)
