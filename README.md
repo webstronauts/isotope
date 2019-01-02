@@ -1,6 +1,7 @@
 # Isotope
 
 [![Build Status](https://travis-ci.org/webstronauts/isotope.svg?branch=master)](https://travis-ci.org/webstronauts/isotope)
+[![gzip size](http://img.badgesize.io/https://unpkg.com/isotope/dist/isotope.min.css?compression=gzip)](https://unpkg.com/isotope/dist/isotope.min.css)
 
 The Atomic toolkit to build your own CSS framework upon.
 
